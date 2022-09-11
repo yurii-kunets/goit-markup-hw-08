@@ -5,16 +5,34 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .activities__list {
-  display: flex;
-  column-gap: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .activities__item {
+  width: 100%;
   position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .activities__cover-text {
