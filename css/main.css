@@ -251,9 +251,14 @@ img {
   flex-direction: column;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .advantages__list {
+  .advantages__item {
     width: calc((100% - 30px) / 2);
   }
 }
